@@ -10,9 +10,9 @@ public class HandleBigInteger {
        System.out.println("和："+result.toString());
        result=n1.subtract(n2);//n1��n2����������
        System.out.println("差:"+result.toString());
-       result=n1.multiply(n2);//n1��n2���˷�����
+       result=n1.multiply(n2);
        System.out.println("积:"+result.toString());
-       result=n1.divide(n2);//n1��n2����������
+       result=n1.divide(n2);
        System.out.println("商:"+result.toString());
        for(int i=1;BigInteger.valueOf(i)!=n1;i++){
            result=BigInteger.valueOf(i*(i+1));
