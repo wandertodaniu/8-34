@@ -6,7 +6,7 @@ public class HandleBigInteger {
       BigInteger n1=new BigInteger("987654321987654321987654321"),
                  n2=new BigInteger("123456789123456789123456789"),
                  result=null;
-       result=n1.add(n2);//n1��n2���ӷ�����
+       result=n1.add(n2);
        System.out.println("和："+result.toString());
        result=n1.subtract(n2);
        System.out.println("差:"+result.toString());
