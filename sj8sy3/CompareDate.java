@@ -19,7 +19,7 @@ public class CompareDate {
       System.out.print("输入日期");
       byte dayTwo = scanner.nextByte();
       Calendar calendar=null ;
-      calendar=calendar.getInstance();//��ʼ����������
+      calendar=calendar.getInstance();
       calendar.set(yearOne,monthOne-1,dayOne);
       long timeOne =calendar.getTimeInMillis();
       calendar.set(yearTwo,monthTwo-1,dayTwo); 
