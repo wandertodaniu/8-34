@@ -20,11 +20,11 @@ public class CompareDate {
       byte dayTwo = scanner.nextByte();
       Calendar calendar=null ;
       calendar=calendar.getInstance();//��ʼ����������
-      calendar.set(yearOne,monthOne-1,dayOne);  //��calendar��ʱ������ΪyearOne��monthOne��dayOne��
-      long timeOne =calendar.getTimeInMillis();     //calendar��ʾ��ʱ��ת���ɺ���
+      calendar.set(yearOne,monthOne-1,dayOne);
+      long timeOne =calendar.getTimeInMillis();
       calendar.set(yearTwo,monthTwo-1,dayTwo); 
       long timeTwo=calendar.getTimeInMillis();
-      Date date1 = new Date(timeOne);       // ��timeOne����������date1
+      Date date1 = new Date(timeOne);
       Date date2 =new Date(timeTwo);
       if(date2.equals(date1))
           System.out.println("两个日期的年、月、日完全相容");
@@ -32,7 +32,7 @@ public class CompareDate {
           System.out.println("您输入的第二个日期大于第一个日期");
       else if(date2.before(date1))
           System.out.println("您输入的第二个日期小鱼第一个日期");
-      long days=Math.abs(timeTwo-timeOne)/(1000*60*60*24);//ʹ��timeTwo,timeOne�������������������
+      long days=Math.abs(timeTwo-timeOne)/(1000*60*60*24);
       System.out.println(yearOne+"年"+monthOne+"月"+dayOne+"日和"
                          +yearTwo+"年"+monthTwo+"月"+dayTwo+"相隔"+days+"天");
    }  
