@@ -28,6 +28,7 @@ public class HandleBigInteger {
               COUNT=COUNT.add(ONE);
               System.out.print(" "+i.toString());
           }
+ System.out.println("laji");
       }
       System.out.println("");
       System.out.println(m.toString()+"一共有"+COUNT.toString()+"个因子");
